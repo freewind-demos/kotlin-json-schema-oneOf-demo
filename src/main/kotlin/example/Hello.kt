@@ -28,4 +28,5 @@ fun main(args: Array<String>) {
     val rawSchema = JSONObject(JSONTokener(jsonSchema))
     val schema = SchemaLoader.load(rawSchema)
     schema.validate(JSONObject(json))
+    println("Validation passed")
 }
